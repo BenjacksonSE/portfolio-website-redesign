@@ -4,8 +4,8 @@ import classes from './NavMenu.module.scss';
 
 const NavMenu = () => {
   return (
-    <div>
-      <ul>
+    <div className={classes.nav}>
+      <ul className={classes.nav__list}>
         <li>
           <Link to="/">
             Home

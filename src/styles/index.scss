@@ -1,25 +1,18 @@
 @import "./reset.scss";
 @import "./variables.scss";
 
-*{
-    padding: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
+    margin: 0;
 }
 
-:root{
-    // --dark-bg: #262626;
-    // --gray-1: #BCB4B4;
-    // --deep-dark: #1E1E1E;
-    // --gray-2: #363636;
-    // --white : white;
-    // --black: black;
+body {
+    width: 100%;
+    font-family: sans-serif;
 }
 
-html{
-// font-size: 10px;
-// font-family: 'Roboto Mono';
-// background-color: var(--dark-bg);
+#root {
+    height: 100%;
 }
 
 ul,li{

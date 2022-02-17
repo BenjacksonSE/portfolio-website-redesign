@@ -1,0 +1,13 @@
+.intro {
+  height: 100vh;
+  width: 100%;
+
+  &__desc {
+    width: 70%;
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: 2px;
+    margin: auto;
+    font-weight: 300;
+  }
+}

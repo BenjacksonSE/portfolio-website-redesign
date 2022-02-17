@@ -31,3 +31,44 @@
     }
   }
 }
+
+.mobile{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 4rem;
+  cursor: pointer;
+  display: none;
+  outline: none;
+}
+
+.mobileclose{
+  display: none;
+}
+
+@media only screen and (max-width: 700px){
+  .mobile{
+    display: block;
+  }
+  .nav__list{
+    transition: .3s ease transform;
+    background-color: red;
+    padding: 2rem;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 12px;
+    position: absolute;
+    right: 1rem;
+    top: $toppos;
+    .mobileclose{
+      display: block;
+      width: 2rem;
+      margin: 0 0 0 auto;
+      cursor: pointer;
+      * {
+        pointer-events: none;
+      }
+    }
+  }
+  
+}

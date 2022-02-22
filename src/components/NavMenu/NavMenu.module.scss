@@ -32,11 +32,12 @@
   }
 }
 
+
 .mobile{
   position: absolute;
   right: 1rem;
   top: 1rem;
-  width: 4rem;
+  width: 2rem;
   cursor: pointer;
   display: none;
   outline: none;
@@ -47,27 +48,37 @@
 }
 
 @media only screen and (max-width: 700px){
+  .hide{
+    transform: translateY(-110%);
+  }
   .mobile{
     display: block;
   }
   .nav__list{
     transition: .3s ease transform;
-    background-color: red;
-    padding: 2rem;
+    background-color: #2b2b2b;
+    padding: 1rem;
     width: 90%;
-    max-width: 300px;
+    max-width: 200px;
     border-radius: 12px;
     position: absolute;
     right: 1rem;
     top: $toppos;
+    a{
+      color: white;
+    }
     .mobileclose{
       display: block;
-      width: 2rem;
+      width: 1.5rem;
       margin: 0 0 0 auto;
       cursor: pointer;
       * {
         pointer-events: none;
       }
+    }
+    li {
+      display: block;
+      margin-bottom: 0rem;
     }
   }
   
